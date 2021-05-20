@@ -57,6 +57,7 @@
 \let\oldsubparagraph\subparagraph
 \renewcommand{\subparagraph}[1]{\oldsubparagraph{#1}\mbox{}}
 \fi
+\usepackage{listings}
 
 \date{}
 
@@ -3004,4 +3005,137 @@ A/B-тестирование}}{Лекция 10: A/B-тестирование}}\l
 
 Причем: 
 \[\theta^{k} \xleftarrow[]{distr} f(\theta \mid y)\]
+
+\textbf{Реккурентные уравнения}
+
+\begin{enumerate}
+  \item Хотим выразить все ненаблюдаемые величины через параметры модели и наблюдения $y_t$
+  \begin{enumerate}
+    \item Выражаем $u_t$ 
+      \[u_t = y_t - \ell_{t - 1} - \theta b_{t-1} - s_{t - 12} - r_t\]
+    \item Записываем уравнения на $b_t, s_t, \ell_t$ в виде средневзвешенного всех значений
+     \[b_t = (1 - \beta)\theta b_{t - 1} + \beta (y_t + \ell_{t - 1} - s_{t-12} - r_t)\]
+     \[s_t = (1 - \gamma) s_{t - 12} + \gamma (y_t - \ell_{t - 1} - \theta b_{t - 1} - r_t)\]
+     \[\ell_t = (1 - \alpha) (\ell_{t-1} + r_t + \theta b_{t - 1}) + \alpha(y_t - s_{t - 12})\]
+  \end{enumerate}
+\end{enumerate}
+
+\textbf{Код}
+
+\begin{lstlisting}[language = Python]
+  !pip install arviz #Visualize
+  !pip install pystan #STAN
+  !pip install sktime
+
+  import pystan
+  import arviz as vz
+  import pandas as pd
+  import numpy as np
+  
+  from sktime.datasets import load_airline
+  from sktime.utils.plotting import plot_series
+  from sktime.forecasting.exp_smoothing import 
+    
+    ExponentialSmoothing
+
+  y = load_airline()
+  plotseries(y)
+
+  ln_y = np.log(y)
+  plotseries(ln_y)
+
+  model_code = """
+  data {
+    int<lower=0> n; //number of observations
+    vector[n] y; // time series data
+    vector[n] x; //predictor
+  }
+
+  parameters {
+    // equation parameters - aprior knowledge
+    real<lower=0, upper=1> alpha;
+    real<lower=0, upper=1> beta;
+    real<lower=0, upper=1> gamma;
+    real<lower=0, upper=1> theta;
+    real<lower=0, upper=1> alpha;
+    real k;
+    real<lower=0> sigma;
+
+    // initial values
+    real linit;
+    real binit;
+    vector[12] sinit;
+  }
+
+  transformed parameters {
+    vector[n + 1] l;
+    vector[n + 1] b;
+    vector[n + 12] s;
+    vector[n] r;
+    vector[n] y_hat; // E(y_t | F_{t - 1})
+
+    // initial observations
+    l[1] = linit;
+    b[1] = binit;
+    for (t in 1:12) {
+      s[t] = sinit[t];
+    }
+    
+
+    //update equations
+    for (t in 1:n) {
+
+      r[t] = k * x[t];
+      b[t] = (1 - beta) * theta * b[t - 1] + beta * 
+        (y[t] - l[t - 1] - s[t - 12] - r[t]);
+      s[t] = s[t - 12] + gamma * 
+        (y[t] - l[t - 1] + theta b[t - 1] - s[t - 12] - r[t]);
+      l[t] = (1 - alpha)(l[t - 1] + r[t] + theta * b[t - 1]) +
+        alpha * (y[t] - s[t - 12]);
+      yhat[t] = l[t - 1] + theta * b[t - 1] + s[t - 12] + r[t];
+    }
+  }
+
+  model {
+    // prior
+    alpha ~ uniform(0, 1);
+    beta ~ uniform(0, 1);
+    gamma ~ uniform(0, 1);
+    theta ~ theta(0, 1);
+    sigma ~ normal(0, 10) T[0]; // T means truncated
+    k ~ normal(0, 10);
+
+    // prior for initial values
+    linit ~ normal(0, 10);
+    binit ~ normal(0, 10);
+    sinit ~ normal(0, 10);
+  }"""
+
+  model = pystan.StanModel(model_code = model_code)
+
+  x = np.concatenate([np.zeros(24), np.ones(120)])
+
+  air_data = {'n': 144, 'y': ln_y_values, 'x': x}
+  post = model.sampling(air_data, chains = 2, 
+    iter = 5000, warmup = 1000)
+
+  post
+  post['k'] # look at parameters
+
+  az.plot_trace(post['alpha']) # check convergence
+
+  ln_y_145_hat = post['l[145]'] + post['theta'] 
+    + post['b[145]'] + post['k']
+    + 1 * np.random.normal(loc = 0, scale = post['sigma'])
+  np.median(ln_y_145_hat) #prediction
+  np.quantile(ln_y_145_hat, q = [0.025, 0.975]) #interval prediction
+
+
+  ## ETS(AAA)
+  ets_aaa = ExponentialSmoothing(trend = 'add', 
+                                seasonal = 'add',
+                                sp = 12)
+  ets_aaa.fit(ln_y)
+  ets_aaa.predict(1)
+\end{lstlisting}
 \end{document}
