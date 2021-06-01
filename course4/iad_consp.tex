@@ -3191,4 +3191,58 @@ A/B-тестирование}}{Лекция 10: A/B-тестирование}}\l
     \item wget, curl - выгрузка данных из интернета
   \end{enumerate}
 \end{enumerate}
+
+\subsection{Docker}
+
+\begin{enumerate}
+  \item В питоне можно поднимать сервер 
+  
+    \verb+nohup python3 -m http.server --bind 0.0.0.0 9091 & echo $1 > run.pid+
+  \begin{enumerate}
+    \item \verb+nohup+ - запускает в бэкграунд
+    \item 0.0.0.0 = запуск на всех доступных айпи
+    \item 9091 - порт
+    \item В файле run.pid появляется идентификатор процесса    
+  \end{enumerate}
+  \item \verb+expose_port_on_colab+ - создаем страничку на ngrok
+  \item ngrok - открывает сервер для интернета
+  \item \verb+joblib - dump, load+ - позволяет сохранять и грузить любые питоновские объекты
+  \item Flask - строим веб сервера
+  \item С помощью \verb+requests+ можно отправлять post-запросы на сервер
+  \item print(r.json) возвращается результат запроса
+  \item \verb+torchserve, torch-model-archiver, captum+ - позволяет напрямую из торча выводить модели на сервер
+  \begin{enumerate}
+    \item \verb+mkdir model_store+
+    \item \verb+создаем index_to_name.json+ - чтобы переводить классы в названия
+    \item \verb+torch-model-archiver+ - архивирует модель в нужную папку
+    \begin{enumerate}
+      \item --model-name - имя модели
+      \item --version - версия
+      \item --model-file - файл модели .py
+      \item --serialized-file - веса 
+      \item --export-model-path - в какую папку класть модель
+      \item --extra-files - \dots
+      \item --handler - функция внутри model.py которую надо вызывать
+    \end{enumerate}
+    \item \verb+torchserve --start --ncm --model-store model-store --models --ts-config+
+    \begin{enumerate}
+      \item tsconfig.prop - добавляем порты для разных функций
+    \end{enumerate}
+  \end{enumerate} 
+  \item \textbf{Docker}
+  \begin{enumerate}
+    \item Позволяет запускать процессы изолированно от OS 
+    \item Вместо VM, но легче
+    \item Container - экземпляр процесса
+    \item Image - запускает много процессов под контейнер
+    \item Docker имеет способы прокидывать директории с исходной машины в контейнер
+    \begin{enumerate}
+      \item Контейнер будет их воспринимать как внутренние, а не внешние
+    \end{enumerate}
+    \item Dockerfile - образ
+    \item \verb+docker build -t name:latest -f Dockerfile .+
+    \item \verb+docker run -v /path_from:/path_to command+ - пробрасываем папку, выполняем команду
+    \item \verb+docker run -p PORTS name:latest+ - пробрасывает порты
+  \end{enumerate}
+\end{enumerate}
 \end{document}
