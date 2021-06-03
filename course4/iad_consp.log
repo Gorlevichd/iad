@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.5.17)  1 JUN 2021 18:02
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.5.17)  3 JUN 2021 08:56
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -614,8 +614,8 @@ File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 
  [1
 
-{c:/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2] [3]
-<media/image4.png, id=206, 415.5525pt x 205.76875pt>
+{c:/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2] [3] [4]
+<media/image4.png, id=215, 415.5525pt x 205.76875pt>
 File: media/image4.png Graphic file (type png)
 <use media/image4.png>
 Package pdftex.def Info: media/image4.png  used on input line 271.
@@ -625,8 +625,8 @@ Underfull \hbox (badness 1168) in paragraph at lines 288--290
 []\T2A/cmr/m/n/12 (+20) Подбираем параметры распределений так, чтобы обучающая
  []
 
-[4 <./media/image4.png>]
-<media/image17.png, id=214, 451.6875pt x 254.9525pt>
+[5 <./media/image4.png>]
+<media/image17.png, id=223, 451.6875pt x 254.9525pt>
 File: media/image17.png Graphic file (type png)
 <use media/image17.png>
 Package pdftex.def Info: media/image17.png  used on input line 414.
@@ -636,7 +636,7 @@ Overfull \hbox (3.78929pt too wide) in paragraph at lines 414--415
 [][] 
  []
 
-[5 <./media/image17.png>]
+[6 <./media/image17.png>]
 Underfull \hbox (badness 1939) in paragraph at lines 431--434
 []\T2A/cmr/m/n/12 (+20) Генерируем z из двумерного нормального распределения \TS1/cmr/m/n/12 (+20) ^^Y
  []
@@ -651,96 +651,96 @@ Underfull \hbox (badness 10000) in paragraph at lines 443--445
 []\T2A/cmr/m/n/12 (+20) Строим задачу бинарной классификации $\OML/cmm/m/it/12 X [][]$ \TS1/cmr/m/n/12 (+20) ^^Y
  []
 
-[6]
+[7]
 Underfull \hbox (badness 2617) in paragraph at lines 560--562
 []\T2A/cmr/m/n/12 (+20) VAE и GAN преобразуют скрытое пространство в данные
  []
 
-[7]
+[8]
 Underfull \hbox (badness 10000) in paragraph at lines 623--625
 []\T2A/cmr/m/n/12 (+20) Подбираем f с помощью логарифмической функции
  []
 
-[8]
-<media/image6.png, id=235, 397.485pt x 166.6225pt>
+[9]
+<media/image6.png, id=244, 397.485pt x 166.6225pt>
 File: media/image6.png Graphic file (type png)
 <use media/image6.png>
 Package pdftex.def Info: media/image6.png  used on input line 727.
 (pdftex.def)             Requested size: 298.12514pt x 124.97163pt.
-<media/image19.png, id=236, 301.125pt x 183.68625pt>
+<media/image19.png, id=245, 301.125pt x 183.68625pt>
 File: media/image19.png Graphic file (type png)
 <use media/image19.png>
 Package pdftex.def Info: media/image19.png  used on input line 729.
 (pdftex.def)             Requested size: 225.32857pt x 137.45041pt.
- [9 <./media/image6.png>]
-<media/image23.png, id=242, 375.4025pt x 100.375pt>
+ [10 <./media/image6.png>]
+<media/image23.png, id=251, 375.4025pt x 100.375pt>
 File: media/image23.png Graphic file (type png)
 <use media/image23.png>
 Package pdftex.def Info: media/image23.png  used on input line 731.
 (pdftex.def)             Requested size: 281.44807pt x 75.25348pt.
-<media/image8.png, id=243, 417.56pt x 167.62625pt>
+<media/image8.png, id=252, 417.56pt x 167.62625pt>
 File: media/image8.png Graphic file (type png)
 <use media/image8.png>
 Package pdftex.def Info: media/image8.png  used on input line 736.
 (pdftex.def)             Requested size: 312.98444pt x 125.64519pt.
-<media/image24.png, id=244, 326.21875pt x 196.735pt>
+<media/image24.png, id=253, 326.21875pt x 196.735pt>
 File: media/image24.png Graphic file (type png)
 <use media/image24.png>
 Package pdftex.def Info: media/image24.png  used on input line 738.
 (pdftex.def)             Requested size: 244.66345pt x 147.55087pt.
-<media/image15.png, id=245, 290.08376pt x 54.2025pt>
+<media/image15.png, id=254, 290.08376pt x 54.2025pt>
 File: media/image15.png Graphic file (type png)
 <use media/image15.png>
 Package pdftex.def Info: media/image15.png  used on input line 740.
 (pdftex.def)             Requested size: 217.5667pt x 40.65259pt.
- [10 <./media/image19.png> <./media/image23.png> <./media/image8.png> <./media/image24.png> <./media/image15.png>]
-<media/image11.png, id=255, 304.13625pt x 141.52875pt>
+ [11 <./media/image19.png> <./media/image23.png> <./media/image8.png> <./media/image24.png> <./media/image15.png>]
+<media/image11.png, id=264, 304.13625pt x 141.52875pt>
 File: media/image11.png Graphic file (type png)
 <use media/image11.png>
 Package pdftex.def Info: media/image11.png  used on input line 752.
 (pdftex.def)             Requested size: 227.75356pt x 105.98433pt.
- [11 <./media/image11.png>] [12] [13]
-<media/image25.png, id=270, 316.18124pt x 414.54875pt>
+ [12 <./media/image11.png>] [13] [14]
+<media/image25.png, id=279, 316.18124pt x 414.54875pt>
 File: media/image25.png Graphic file (type png)
 <use media/image25.png>
 Package pdftex.def Info: media/image25.png  used on input line 1114.
 (pdftex.def)             Requested size: 236.96165pt x 310.68307pt.
- [14] [15 <./media/image25.png>]
-<media/image22.png, id=280, 276.03125pt x 63.23625pt>
+ [15] [16 <./media/image25.png>]
+<media/image22.png, id=289, 276.03125pt x 63.23625pt>
 File: media/image22.png Graphic file (type png)
 <use media/image22.png>
 Package pdftex.def Info: media/image22.png  used on input line 1201.
 (pdftex.def)             Requested size: 207.3009pt x 47.49074pt.
-<media/image5.png, id=281, 466.74374pt x 204.765pt>
+<media/image5.png, id=290, 466.74374pt x 204.765pt>
 File: media/image5.png Graphic file (type png)
 <use media/image5.png>
 Package pdftex.def Info: media/image5.png  used on input line 1219.
 (pdftex.def)             Requested size: 350.07118pt x 153.5796pt.
- [16 <./media/image22.png> <./media/image5.png>]
-<media/image9.png, id=288, 445.665pt x 129.48375pt>
+ [17 <./media/image22.png> <./media/image5.png>]
+<media/image9.png, id=297, 445.665pt x 129.48375pt>
 File: media/image9.png Graphic file (type png)
 <use media/image9.png>
 Package pdftex.def Info: media/image9.png  used on input line 1298.
 (pdftex.def)             Requested size: 334.24792pt x 97.11255pt.
- [17 <./media/image9.png>]
-<media/image12.png, id=294, 296.10625pt x 332.24126pt>
+ [18 <./media/image9.png>]
+<media/image12.png, id=303, 296.10625pt x 332.24126pt>
 File: media/image12.png Graphic file (type png)
 <use media/image12.png>
 Package pdftex.def Info: media/image12.png  used on input line 1381.
 (pdftex.def)             Requested size: 222.02943pt x 249.12456pt.
- [18 <./media/image12.png>]
-<media/image2.png, id=300, 486.81876pt x 193.72375pt>
+ [19 <./media/image12.png>]
+<media/image2.png, id=310, 486.81876pt x 193.72375pt>
 File: media/image2.png Graphic file (type png)
 <use media/image2.png>
 Package pdftex.def Info: media/image2.png  used on input line 1509.
 (pdftex.def)             Requested size: 364.25891pt x 144.9525pt.
- [19]
-<media/image10.png, id=306, 250.9375pt x 129.48375pt>
+ [20]
+<media/image10.png, id=315, 250.9375pt x 129.48375pt>
 File: media/image10.png Graphic file (type png)
 <use media/image10.png>
 Package pdftex.def Info: media/image10.png  used on input line 1520.
 (pdftex.def)             Requested size: 188.55875pt x 97.2963pt.
-<media/image7.png, id=307, 462.72874pt x 229.85875pt>
+<media/image7.png, id=316, 462.72874pt x 229.85875pt>
 File: media/image7.png Graphic file (type png)
 <use media/image7.png>
 Package pdftex.def Info: media/image7.png  used on input line 1543.
@@ -750,30 +750,30 @@ Overfull \hbox (12.27715pt too wide) in paragraph at lines 1543--1544
 [][] 
  []
 
-[20 <./media/image2.png> <./media/image10.png> <./media/image7.png>]
-<media/image21.png, id=315, 261.97874pt x 406.51875pt>
+[21 <./media/image2.png> <./media/image10.png> <./media/image7.png>]
+<media/image21.png, id=324, 261.97874pt x 406.51875pt>
 File: media/image21.png Graphic file (type png)
 <use media/image21.png>
 Package pdftex.def Info: media/image21.png  used on input line 1605.
 (pdftex.def)             Requested size: 196.34766pt x 304.6774pt.
- [21]
-<media/image20.png, id=320, 246.9225pt x 277.035pt>
+ [22]
+<media/image20.png, id=330, 246.9225pt x 277.035pt>
 File: media/image20.png Graphic file (type png)
 <use media/image20.png>
 Package pdftex.def Info: media/image20.png  used on input line 1613.
 (pdftex.def)             Requested size: 185.21024pt x 207.79686pt.
-<media/image1.png, id=321, 228.855pt x 136.51pt>
+<media/image1.png, id=331, 228.855pt x 136.51pt>
 File: media/image1.png Graphic file (type png)
 <use media/image1.png>
 Package pdftex.def Info: media/image1.png  used on input line 1617.
 (pdftex.def)             Requested size: 171.17987pt x 102.10728pt.
- [22 <./media/image21.png> <./media/image20.png>]
-<media/image3.png, id=328, 499.8675pt x 102.3825pt>
+ [23 <./media/image21.png> <./media/image20.png>]
+<media/image3.png, id=338, 499.8675pt x 102.3825pt>
 File: media/image3.png Graphic file (type png)
 <use media/image3.png>
 Package pdftex.def Info: media/image3.png  used on input line 1675.
 (pdftex.def)             Requested size: 374.05305pt x 76.61327pt.
- [23 <./media/image1.png>]
+ [24 <./media/image1.png>]
 File: media/image3.png Graphic file (type png)
 <use media/image3.png>
 Package pdftex.def Info: media/image3.png  used on input line 1735.
@@ -783,8 +783,8 @@ Overfull \hbox (61.24965pt too wide) in paragraph at lines 1735--1736
 [][] 
  []
 
-[24 <./media/image3.png>]
-<media/image16.png, id=340, 321.2pt x 133.49875pt>
+[25 <./media/image3.png>]
+<media/image16.png, id=350, 321.2pt x 133.49875pt>
 File: media/image16.png Graphic file (type png)
 <use media/image16.png>
 Package pdftex.def Info: media/image16.png  used on input line 1818.
@@ -799,17 +799,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 1827--1829
 []\T2A/cmr/m/n/12 (+20) Пользователь не взаимодействовал \TS1/cmr/m/n/12 (+20) ^^Y \T2A/cmr/m/n/12 (+20) Ставим
  []
 
-[25 <./media/image16.png>]
+[26 <./media/image16.png>]
 Underfull \hbox (badness 2302) in paragraph at lines 1949--1951
 []\T2A/cmr/m/n/12 (+20) precision@k = $[][]\OT1/cmr/m/n/12 (+20) (\OML/cmm/m/it/12 K\OT1/cmr/m/n/12 (+20) )  \OMS/cmsy/m/n/12 \  \OML/cmm/m/it/12 L[]\OMS/cmsy/m/n/12 j \OML/cmm/m/it/12 = K$\T2A/cmr/m/n/12 (+20) - не учитывает
  []
 
-[26]
+[27]
 Underfull \hbox (badness 1629) in paragraph at lines 2038--2039
 []\T2A/cmr/m/n/12 (+20) Измеряем попарное расстояние между эмбеддингами
  []
 
-[27] [28]
+[28] [29]
 Underfull \hbox (badness 10000) in paragraph at lines 2356--2358
 []\T2A/cmr/m/n/12 (+20) Вечный обратный эксперимент - возвращаем части
  []
@@ -819,7 +819,7 @@ Underfull \hbox (badness 6016) in paragraph at lines 2377--2379
 []\T2A/cmr/m/n/12 (+20) Может быть сложно получить случайные группы, в
  []
 
-[29]
+[30]
 Underfull \hbox (badness 3838) in paragraph at lines 2481--2484
 []\T2A/cmr/m/n/12 (+20) Trade-off - при больших выборках можно продержать
  []
@@ -839,13 +839,13 @@ Underfull \hbox (badness 1721) in paragraph at lines 2487--2489
 []\T2A/cmr/m/n/12 (+20) При большой выборке можно использовать нормальные
  []
 
-[30] [31]
-<media/image18.png, id=424, 317.185pt x 150.5625pt>
+[31] [32]
+<media/image18.png, id=433, 317.185pt x 150.5625pt>
 File: media/image18.png Graphic file (type png)
 <use media/image18.png>
 Package pdftex.def Info: media/image18.png  used on input line 2599.
 (pdftex.def)             Requested size: 237.89783pt x 112.92618pt.
-<media/image13.png, id=425, 518.93875pt x 228.855pt>
+<media/image13.png, id=434, 518.93875pt x 228.855pt>
 File: media/image13.png Graphic file (type png)
 <use media/image13.png>
 Package pdftex.def Info: media/image13.png  used on input line 2611.
@@ -860,7 +860,7 @@ Underfull \hbox (badness 7362) in paragraph at lines 2615--2616
 []\T2A/cmr/m/n/12 (+20) Нужно знать, что распределение среднего близко к
  []
 
-<media/image14.png, id=426, 429.605pt x 189.70876pt>
+<media/image14.png, id=435, 429.605pt x 189.70876pt>
 File: media/image14.png Graphic file (type png)
 <use media/image14.png>
 Package pdftex.def Info: media/image14.png  used on input line 2644.
@@ -870,12 +870,12 @@ Overfull \hbox (9.4061pt too wide) in paragraph at lines 2644--2645
 [][] 
  []
 
-[32 <./media/image18.png> <./media/image13.png>]
+[33 <./media/image18.png> <./media/image13.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 2706--2708
 []\T2A/cmr/m/n/12 (+20) Проверяем метрику каждый час = фактически
  []
 
-[33 <./media/image14.png>] [34]
+[34 <./media/image14.png>] [35]
 Underfull \hbox (badness 10000) in paragraph at lines 2879--2881
 []\T2A/cmr/m/n/12 (+20) Добавляются возможности построения интервалов и
  []
@@ -885,14 +885,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 2888--2889
 []\T2A/cmr/m/n/12 (+20) STAN - вероятностный язык программирования для
  []
 
-[35] [36] [37] (c:/texlive/2021/texmf-dist/tex/latex/listings/lstlang1.sty
+[36] [37] [38] (c:/texlive/2021/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2020/03/24 1.8d listings language file
-) [38]
+) [39]
 Overfull \hbox (46.99707pt too wide) in paragraph at lines 3092--3093
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-[39]
+[40]
 Overfull \hbox (46.99707pt too wide) in paragraph at lines 3093--3094
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
@@ -912,16 +912,16 @@ Overfull \hbox (89.28711pt too wide) in paragraph at lines 3131--3134
 [][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-[40]
+[41]
 LaTeX Font Info:    Trying to load font information for T2A+cmtt on input line 3162.
  (c:/texlive/2021/texmf-dist/tex/latex/cyrillic/t2acmtt.fd
 File: t2acmtt.fd 2001/08/11 v1.0a Computer Modern Cyrillic font definitions
-) [41]
+) [42]
 Underfull \hbox (badness 3965) in paragraph at lines 3187--3188
 []\T2A/cmr/m/n/12 (+20) grep - позволяет фильтровать строки по регулярному
  []
 
-[42]
+[43]
 Overfull \hbox (59.17218pt too wide) in paragraph at lines 3200--3201
 [][][]\T2A/cmtt/m/n/12 nohup python3 -m http.server --bind 0.0.0.0 9091 & echo $1 > run.pid 
  []
@@ -936,7 +936,7 @@ Underfull \hbox (badness 2384) in paragraph at lines 3225--3226
 []\T2A/cmr/m/n/12 (+20) --handler - функция внутри model.py которую надо
  []
 
-[43]
+[44]
 Overfull \hbox (103.54234pt too wide) in paragraph at lines 3227--3228
 [][][]\T2A/cmtt/m/n/12 torchserve --start --ncm --model-store model-store --models --ts-config 
  []
@@ -946,23 +946,23 @@ Overfull \hbox (1.58559pt too wide) in paragraph at lines 3244--3245
 [][][]\T2A/cmtt/m/n/12 docker run -v /path_from:/path_to command []\T2A/cmr/m/n/12 (-20) - пробрасываем
  []
 
-[44] (./iad_consp.aux)
+[45] [46] [47] (./iad_consp.aux)
 Package rerunfilecheck Info: File `iad_consp.out' has not changed.
-(rerunfilecheck)             Checksum: B18A64F2028DF24760E26FF635E24F8F;7486.
+(rerunfilecheck)             Checksum: 61208C42BA97EEC3ED786D294AB37ABD;7644.
  ) 
 Here is how much of TeX's memory you used:
- 15163 strings out of 478846
- 217749 string characters out of 5859785
+ 15205 strings out of 478846
+ 218100 string characters out of 5859785
  792882 words of memory out of 5000000
- 32108 multiletter control sequences out of 15000+600000
- 419974 words of font info for 107 fonts, out of 8000000 for 9000
+ 32109 multiletter control sequences out of 15000+600000
+ 420114 words of font info for 109 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  60i,11n,63p,599b,2045s stack positions out of 5000i,500n,10000p,200000b,80000s
-{c:/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t2a.enc}{c:/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sftt1200.pfb>
-Output written on iad_consp.pdf (44 pages, 1160579 bytes).
+{c:/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t2a.enc}{c:/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sftt1200.pfb>
+Output written on iad_consp.pdf (47 pages, 1183861 bytes).
 PDF statistics:
- 816 PDF objects out of 1000 (max. 8388607)
- 698 compressed objects within 7 object streams
- 334 named destinations out of 1000 (max. 500000)
- 29078 words of extra memory for PDF output out of 29859 (max. 10000000)
+ 882 PDF objects out of 1000 (max. 8388607)
+ 758 compressed objects within 8 object streams
+ 371 named destinations out of 1000 (max. 500000)
+ 29086 words of extra memory for PDF output out of 29859 (max. 10000000)
 

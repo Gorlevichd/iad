@@ -3245,4 +3245,64 @@ A/B-тестирование}}{Лекция 10: A/B-тестирование}}\l
     \item \verb+docker run -p PORTS name:latest+ - пробрасывает порты
   \end{enumerate}
 \end{enumerate}
+
+\section{Поиск аномалий}
+
+\begin{enumerate}
+  \item Аномальных примеров очень мало
+  \item Примеры аномальных объектов не исчерпывающие
+  \item \textbf{Метрический подход}
+  \begin{enumerate}
+    \item За аномалии считаем далекие объекты
+    \item $\alpha(x) = [min \rho(x, x_i) > \alpha ]$
+    \item Недостатки
+    \begin{enumerate}
+      \item Зависит от близости исходных объектов
+    \end{enumerate}
+    \item \textit{Local outlier factor}
+    \begin{enumerate}
+      \item Находим k соседей нового объекта $x$ из $X$
+      \item Считаем среднее расстояние до них
+      \item Для каждого из k соседей находим их k соседей
+      \item Считаем среднее расстояние
+      \item Сравниваем эти расстояния
+      \[\frac{d}{\frac{1}{k}\sum_j^k d_j} > d\]
+      \item Меньше порога $\beta$ тоже подозрительно
+      \item Подбираем k, чтобы на обучающей выборке было мало ложных срабатываний
+    \end{enumerate}
+  \end{enumerate}
+  \item \textbf{Статистический подход}
+  \begin{enumerate}
+    \item Описываем некоторым распределением $\mathcal{N}$
+    \item Подбираем $\mu, \sigma$ с помощью ММП
+    \item Считаем аномалии по вероятностям
+  \end{enumerate}
+  \item \textbf{Подходы на основе моделей}
+  \begin{enumerate}
+    \item Одноклассовый SVM
+    \begin{enumerate}
+      \item Берем начало координат и пытаемся отделить выборку от начала координат
+      \[\begin{cases}
+          \frac{1}{2}||w||^2 + \frac{1}{Vl}\sum_{i = 1}^l \xi_i - \rho \rightarrow min \\
+          <w, x_i> \geq \rho - \xi_i \\
+          \xi_i \geq 0
+      \end{cases}\]
+      \item Делаем ядровой переход, чтобы выборка не лежала в 0
+    \end{enumerate}
+  \end{enumerate}
+  \item \textbf{Подходы на основе случайных проекций}
+  \begin{enumerate}
+    \item Isolation forest
+    \begin{enumerate}
+      \item Строим N решающих деревьев глубины \verb+max_depth+ и выбираем предикаты случайно
+      \item Если лист в который попал объект высоко - скорее всего аномалия
+      \item Лист в котором мало объектов - более аномальный
+      \item $h_n(k) = k + C(m)$
+      \item $C(m) = 2H(m - 1) + 2\frac{m - 1}{m}$
+      \item m - количество объектов в листе, H - i-ое гармоническое число
+      \item Усредняем показатель аномальности по всем деревьям
+      \item $\alpha(x) = 2\frac{-\frac{1}{N}\sum_{n = 1}^N h_n(x)}{C(l)}$
+    \end{enumerate}
+  \end{enumerate}
+\end{enumerate} 
 \end{document}
